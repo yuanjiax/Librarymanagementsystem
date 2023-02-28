@@ -49,9 +49,9 @@ $(function(){
             layer.msg("登录成功！")
             //将登陆成功得到的token字符串，保存到localStorage中
             localStorage.setItem('token',res.token)
-            console.log(res.token);
+            // console.log(res.token);
             //跳转到后台主页
-            //location.href = '/index.html'
+            location.href = '/index.html'
             //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzA5MSwidXNlcm5hbWUiOiJ5angiLCJwYXNzd29yZCI6IiIsIm5pY2tuYW1lIjoiIiwiZW1haWwiOiIiLCJ1c2VyX3BpYyI6IiIsImlhdCI6MTY3Njk2NDEzNiwiZXhwIjoxNjc3MDAwMTM2fQ.txxtngC9DgnT6igcBV41qc2V8hYwXz7nHly6VCt8ysk
         })
     })
